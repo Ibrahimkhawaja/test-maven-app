@@ -19,12 +19,12 @@ pipeline {
                 sh 'mvn clean'
             }
         }
-        stage ('Clean') {
+        stage ('Install') {
             steps {
                 sh 'mvn install'
             }
         }
-        stage ('Clean') {
+        stage ('Package') {
             steps {
                 sh 'mvn package'
             }
